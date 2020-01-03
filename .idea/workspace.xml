@@ -7,15 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f30487d2-4387-460e-88d1-4ada559d2a55" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/AppManage_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/AppManage_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppManage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AppManage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -99,7 +99,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.0.27">
     <configuration name="DevUserTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -233,6 +233,7 @@
       <workItem from="1577939286281" duration="624000" />
       <workItem from="1577939961109" duration="2302000" />
       <workItem from="1578020791988" duration="1471000" />
+      <workItem from="1578022567921" duration="546000" />
     </task>
     <task id="LOCAL-00001" summary="backendlogin完成">
       <created>1578021238535</created>
@@ -241,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578021238535</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="backendlogin完成">
+      <created>1578022735115</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578022735115</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,10 +272,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1577938008287" />
-    <state x="183" y="0" key="CommitChangelistDialog2" timestamp="1578021235144">
+    <state x="183" y="0" key="CommitChangelistDialog2" timestamp="1578022734130">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="183" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1578021235144" />
+    <state x="183" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1578022734130" />
     <state x="139" y="93" key="FileChooserDialogImpl" timestamp="1577935113013">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -332,17 +340,25 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="351" y="57" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1578021273684" />
-    <state x="144" y="0" key="SettingsEditor" timestamp="1577934336838">
+    <state x="228" y="6" key="Registry" timestamp="1578023108501">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1577934336838" />
-    <state x="233" y="77" key="Vcs.Push.Dialog.v2" timestamp="1578021482190">
+    <state x="228" y="6" key="Registry/0.0.1280.680@0.0.1280.680" timestamp="1578023108501" />
+    <state x="144" y="0" key="SettingsEditor" timestamp="1578023030971">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1578021482190" />
-    <state x="332" y="143" key="git4idea.merge.GitPullDialog" timestamp="1578022669743">
+    <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1578023030971" />
+    <state x="233" y="77" key="Vcs.Push.Dialog.v2" timestamp="1578022774568">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="332" y="143" key="git4idea.merge.GitPullDialog/0.0.1280.680@0.0.1280.680" timestamp="1578022669743" />
+    <state x="233" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1578022774568" />
+    <state x="332" y="143" key="git4idea.merge.GitPullDialog" timestamp="1578022745049">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="332" y="143" key="git4idea.merge.GitPullDialog/0.0.1280.680@0.0.1280.680" timestamp="1578022745049" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1578023084586">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1578023084586" />
   </component>
 </project>
