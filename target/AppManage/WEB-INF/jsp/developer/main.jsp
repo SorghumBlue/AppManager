@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8" isELIgnored="false" %>
+	pageEncoding="UTF-8" isELIgnored="false"%>
 <%@include file="common/header.jsp"%>
 <div class="page-title">
 	<div class="title_left">
