@@ -7,30 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f30487d2-4387-460e-88d1-4ada559d2a55" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/AppManage.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/AppManage_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/AppManage_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppManage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AppManage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/springMvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springMvc-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/backend/appcheck.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/backend/appcheck.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/backend/applist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/backend/applist.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/backend/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/backend/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/backendlogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/backendlogin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/developer/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/developer/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/kgc/test/DevUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kgc/test/DevUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/interceptor/LoginInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/pojo/DevUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/pojo/DevUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/service/impl/DevUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/service/impl/DevUserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/springMvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/springMvc-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/backend/appcheck.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/backend/appcheck.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/backend/applist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/backend/applist.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/backend/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/backend/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/backendlogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/backendlogin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/developer/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/developer/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kgc/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kgc/interceptor/LoginInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kgc/pojo/DevUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kgc/pojo/DevUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kgc/service/impl/DevUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kgc/service/impl/DevUserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springMvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springMvc-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kgc/test/DevUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/kgc/test/DevUserTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,14 +232,30 @@
       <workItem from="1577934039346" duration="4666000" />
       <workItem from="1577939286281" duration="624000" />
       <workItem from="1577939961109" duration="2302000" />
-      <workItem from="1578020791988" duration="291000" />
+      <workItem from="1578020791988" duration="1471000" />
     </task>
+    <task id="LOCAL-00001" summary="backendlogin完成">
+      <created>1578021238535</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578021238535</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="backendlogin完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="backendlogin完成" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="233" y="2" key="#Notifications" timestamp="1578021357804">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="2" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1578021357804" />
     <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577935125117">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -268,6 +264,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1577938008287" />
+    <state x="183" y="0" key="CommitChangelistDialog2" timestamp="1578021235144">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="183" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1578021235144" />
     <state x="139" y="93" key="FileChooserDialogImpl" timestamp="1577935113013">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -328,9 +328,21 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1577934397084" />
+    <state x="351" y="57" key="MultipleFileMergeDialog" timestamp="1578021273684">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="351" y="57" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1578021273684" />
     <state x="144" y="0" key="SettingsEditor" timestamp="1577934336838">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1577934336838" />
+    <state x="233" y="77" key="Vcs.Push.Dialog.v2" timestamp="1578021482190">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1578021482190" />
+    <state x="332" y="143" key="git4idea.merge.GitPullDialog" timestamp="1578022669743">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="332" y="143" key="git4idea.merge.GitPullDialog/0.0.1280.680@0.0.1280.680" timestamp="1578022669743" />
   </component>
 </project>
