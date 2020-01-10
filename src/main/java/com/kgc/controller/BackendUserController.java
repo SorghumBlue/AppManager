@@ -1,5 +1,6 @@
 package com.kgc.controller;
 
+import com.kgc.dao.DataDictionaryMapper;
 import com.kgc.pojo.BackendUser;
 import com.kgc.service.BackendUserService;
 import org.springframework.stereotype.Controller;
@@ -14,7 +15,9 @@ import javax.servlet.http.HttpSession;
 @RequestMapping("/backUser")
 public class BackendUserController {
     @Resource
-    BackendUserService backendUserService;
+    private BackendUserService backendUserService;
+    @Resource
+    private DataDictionaryMapper dataDictionaryMapper;
     @RequestMapping("/login")
     public String login(){
         return "backendlogin";
@@ -22,7 +25,6 @@ public class BackendUserController {
     @RequestMapping(value = "/dologin", method = RequestMethod.POST)
     public String dologin(HttpSession session,@RequestParam String userCode, String userPassword){
         BackendUser user = backendUserService.selectByLogin(userCode, userPassword);
-        System.out.println(user);
         if(user != null) {
             session.setAttribute("user",user);
             return "/backend/main";

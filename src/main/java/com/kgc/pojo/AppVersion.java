@@ -6,7 +6,7 @@ import java.util.Date;
 
 /**
  * app_version
- * @author
+ * @author 
  */
 public class AppVersion implements Serializable {
     /**
@@ -193,18 +193,18 @@ public class AppVersion implements Serializable {
         }
         AppVersion other = (AppVersion) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
-                && (this.getAppid() == null ? other.getAppid() == null : this.getAppid().equals(other.getAppid()))
-                && (this.getVersionno() == null ? other.getVersionno() == null : this.getVersionno().equals(other.getVersionno()))
-                && (this.getVersioninfo() == null ? other.getVersioninfo() == null : this.getVersioninfo().equals(other.getVersioninfo()))
-                && (this.getPublishstatus() == null ? other.getPublishstatus() == null : this.getPublishstatus().equals(other.getPublishstatus()))
-                && (this.getDownloadlink() == null ? other.getDownloadlink() == null : this.getDownloadlink().equals(other.getDownloadlink()))
-                && (this.getVersionsize() == null ? other.getVersionsize() == null : this.getVersionsize().equals(other.getVersionsize()))
-                && (this.getCreatedby() == null ? other.getCreatedby() == null : this.getCreatedby().equals(other.getCreatedby()))
-                && (this.getCreationdate() == null ? other.getCreationdate() == null : this.getCreationdate().equals(other.getCreationdate()))
-                && (this.getModifyby() == null ? other.getModifyby() == null : this.getModifyby().equals(other.getModifyby()))
-                && (this.getModifydate() == null ? other.getModifydate() == null : this.getModifydate().equals(other.getModifydate()))
-                && (this.getApklocpath() == null ? other.getApklocpath() == null : this.getApklocpath().equals(other.getApklocpath()))
-                && (this.getApkfilename() == null ? other.getApkfilename() == null : this.getApkfilename().equals(other.getApkfilename()));
+            && (this.getAppid() == null ? other.getAppid() == null : this.getAppid().equals(other.getAppid()))
+            && (this.getVersionno() == null ? other.getVersionno() == null : this.getVersionno().equals(other.getVersionno()))
+            && (this.getVersioninfo() == null ? other.getVersioninfo() == null : this.getVersioninfo().equals(other.getVersioninfo()))
+            && (this.getPublishstatus() == null ? other.getPublishstatus() == null : this.getPublishstatus().equals(other.getPublishstatus()))
+            && (this.getDownloadlink() == null ? other.getDownloadlink() == null : this.getDownloadlink().equals(other.getDownloadlink()))
+            && (this.getVersionsize() == null ? other.getVersionsize() == null : this.getVersionsize().equals(other.getVersionsize()))
+            && (this.getCreatedby() == null ? other.getCreatedby() == null : this.getCreatedby().equals(other.getCreatedby()))
+            && (this.getCreationdate() == null ? other.getCreationdate() == null : this.getCreationdate().equals(other.getCreationdate()))
+            && (this.getModifyby() == null ? other.getModifyby() == null : this.getModifyby().equals(other.getModifyby()))
+            && (this.getModifydate() == null ? other.getModifydate() == null : this.getModifydate().equals(other.getModifydate()))
+            && (this.getApklocpath() == null ? other.getApklocpath() == null : this.getApklocpath().equals(other.getApklocpath()))
+            && (this.getApkfilename() == null ? other.getApkfilename() == null : this.getApkfilename().equals(other.getApkfilename()));
     }
 
     @Override

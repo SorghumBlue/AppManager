@@ -1,10 +1,13 @@
 package com.kgc.pojo;
 
+import com.baomidou.mybatisplus.annotations.TableField;
 import lombok.Data;
 
 import java.util.Date;
 @Data
 public class BackendUser {
+    @TableField(exist = false)
+    private final String typeCode = "USER_TYPE";
     private Integer id;
     private String usercode;
     private String username;
@@ -13,5 +16,7 @@ public class BackendUser {
     private Integer modifyby;
     private Date modifydate;
     private Integer createdby;
-    private Integer usertype;
+    private Long usertype;
+    @TableField(exist = false)
+    private String userTypeName;
 }
