@@ -39,14 +39,14 @@
     </bean>
     <mvc:resources mapping="/statics/**" location="/statics/"/>
     <!--拦截器-->
-    <mvc:interceptors>
+    <!--<mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
             <mvc:exclude-mapping path="/**/*login"/>
             <mvc:exclude-mapping path="/statics/**"/>
             <bean class="com.kgc.interceptor.LoginInterceptor"/>
         </mvc:interceptor>
-    </mvc:interceptors>
+    </mvc:interceptors>-->
     <!--<mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/sys/provider"/>
