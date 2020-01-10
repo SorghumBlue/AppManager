@@ -15,26 +15,25 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
-@RequestMapping("/AppInfo")
+@RequestMapping("/appInfo")
 public class AppInfoController {
     @Resource
     AppInfoService appInfoService;
 
-    @RequestMapping("/contextPath")
+    @RequestMapping("/check")
     public String appcheck(HttpSession session, @RequestParam(required = false) Integer aid, @RequestParam(required = false) Integer vid) {
-        aid = 58;
-        vid = 40;
+        System.out.println("==============="+aid+"============"+vid);
         AppInfo appInfo = appInfoService.selectById(aid, vid);
         AppVersion appVersion = appInfo.getAppVersion();
         session.setAttribute("appVersion", appVersion);
         session.setAttribute("appInfo", appInfo);
         //查找所属平台
-        Integer valueid = appInfo.getFlatformid();
+        Long valueid = appInfo.getFlatformid();
         DataDictionary data = appInfoService.selectByvalueid(valueid);
         String valuename = data.getValuename();
         session.setAttribute("floatform",valuename);
         //APP状态
-        Integer status = appInfo.getStatus();
+        Long status = appInfo.getStatus();
         DataDictionary dataDictionary = appInfoService.selectByStatus(status);
         String statusname = dataDictionary.getValuename();
         session.setAttribute("status",statusname);
@@ -44,10 +43,10 @@ public class AppInfoController {
         return "/backend/appcheck";
     }
     @RequestMapping("checksave")
-    public String save(Integer id,Integer status){
+    public String save(Long id,Long status){
         //修改审核状态
         int update = appInfoService.updateStatus(id, status);
-        return "redirect:/AppInfo/contextPath";
+        return "redirect:/appManager/showList";
     }
 // 修改APPInfo
     @RequestMapping("/appinfomodify")

@@ -148,7 +148,8 @@ public class AppInfo implements Serializable {
     private String statusname;
     @TableField(exist = false)
     private String versionno;
-
+    @TableField(exist = false)
+    private AppVersion appVersion;
 
 
     private static final long serialVersionUID = 1L;
