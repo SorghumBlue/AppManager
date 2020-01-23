@@ -1,5 +1,7 @@
 package com.kgc.pojo;
 
+import com.baomidou.mybatisplus.annotations.TableField;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -73,6 +75,31 @@ public class AppVersion implements Serializable {
      * 上传的apk文件名称
      */
     private String apkfilename;
+
+    @TableField(exist = false)
+    private String appname;
+    @TableField(exist = false)
+    private String publishstatusname;
+
+    public String getPublishstatusname() {
+        return publishstatusname;
+    }
+
+    public void setPublishstatusname(String publishstatusname) {
+        this.publishstatusname = publishstatusname;
+    }
+
+    public String getAppname() {
+        return appname;
+    }
+
+    public void setAppname(String appname) {
+        this.appname = appname;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
 
     private static final long serialVersionUID = 1L;
 

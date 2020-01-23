@@ -9,4 +9,11 @@ public interface AppVersionService {
     AppVersion selectById(Integer id);
     int updateByid(AppVersion appVersion);
     int add(AppVersion appVersion);
+
+
+    List<AppVersion> findAll();
+
+    List<AppVersion> findByAppId(Long appid);
+
+    Integer delByAppId(Long appid);
 }

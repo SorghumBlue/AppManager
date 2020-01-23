@@ -6,6 +6,7 @@ import com.kgc.pojo.AppCategory;
 import com.kgc.pojo.AppInfo;
 import com.kgc.pojo.DataDictionary;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public interface AppInfoService {
@@ -23,4 +24,31 @@ public interface AppInfoService {
     int updateStatus(Long id, Long statusid);
     //查找软件名称
     AppInfo selectName(Integer id);
+
+
+    Page<AppInfo> selectAllBySome(Integer pageIndex, Integer pageSize, String querySoftwareName, Long queryStatus,
+                            Long queryFlatformId,
+                            Long queryCategoryLevel1,
+                            Long queryCategoryLevel2,
+                            Long queryCategoryLevel3);
+
+    Integer insertApp(String  softwareName,
+                      String APKName,
+                      String supportROM,
+                      String interfaceLanguage,
+                      BigDecimal softwareSize,
+                      Long downloads,
+                      Long flatformId,
+                      Long categoryLevel1,
+                      Long categoryLevel2,
+                      Long categoryLevel3,
+                      String status,
+                      String appInfo,
+                      String a_logoPicPath);
+
+    List<AppInfo> findAll();
+    AppInfo AppView(Long appid);
+    Integer delApp(Long appid);
+
+    Integer modifyApp(Long appid);
 }
