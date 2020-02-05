@@ -52,7 +52,7 @@ public class AppVersionImpl implements AppVersionService {
     }
 
     @Override
-    public List<AppVersion> findByAppId(Long appid) {
+    public List<AppVersion> findByAppId(Integer appid) {
         EntityWrapper<AppVersion> wrapper = new EntityWrapper<>();
         wrapper.eq("appid",appid);
         List<AppVersion> list = versionMapper.selectList(wrapper);   // 版本
@@ -67,12 +67,11 @@ public class AppVersionImpl implements AppVersionService {
                 }
             }
         }
-
         return list;
     }
 
     @Override
-    public Integer delByAppId(Long appid) {
-        return versionMapper.deleteById(appid);
+    public Integer delByAppId(Integer appid) {
+        return versionMapper.delete(new EntityWrapper<AppVersion>().eq("appid",appid));
     }
 }

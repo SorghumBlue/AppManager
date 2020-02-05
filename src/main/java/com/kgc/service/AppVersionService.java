@@ -13,7 +13,7 @@ public interface AppVersionService {
 
     List<AppVersion> findAll();
 
-    List<AppVersion> findByAppId(Long appid);
+    List<AppVersion> findByAppId(Integer appid);
 
-    Integer delByAppId(Long appid);
+    Integer delByAppId(Integer appid);
 }

@@ -1,6 +1,5 @@
 package com.kgc.controller;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.kgc.pojo.AppCategory;
 import com.kgc.pojo.AppInfo;
 import com.kgc.pojo.AppVersion;
@@ -9,9 +8,11 @@ import com.kgc.service.AppInfoService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
+import java.util.Arrays;
 import java.util.List;
 
 @Controller
@@ -56,4 +57,5 @@ public class AppInfoController {
         System.out.println(appInfo);
         return "/developer/appinfomodify";
     }
+
 }

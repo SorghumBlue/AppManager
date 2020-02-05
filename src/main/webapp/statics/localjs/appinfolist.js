@@ -3,7 +3,7 @@ $("#queryCategoryLevel1").change(function(){
 	if(queryCategoryLevel1 != '' && queryCategoryLevel1 != null){
 		$.ajax({
 			type:"GET",//请求类型
-			url:"categorylevellist.json",//请求的url
+			url:"/devUser/level",//请求的url
 			data:{pid:queryCategoryLevel1},//请求参数
 			dataType:"json",//ajax接口（请求url）返回的数据类型
 			success:function(data){//data：返回数据（json对象）
@@ -13,7 +13,7 @@ $("#queryCategoryLevel1").change(function(){
 					
 					
 					
-					options += "<option value=\""+data[i].id+"\">"+data[i].categoryName+"</option>";
+					options += "<option value=\""+data[i].id+"\">"+data[i].categoryname+"</option>";
 				}
 				$("#queryCategoryLevel2").html(options);
 			},
@@ -36,7 +36,7 @@ $("#queryCategoryLevel2").change(function(){
 	if(queryCategoryLevel2 != '' && queryCategoryLevel2 != null){
 		$.ajax({
 			type:"GET",//请求类型
-			url:"categorylevellist.json",//请求的url
+			url:"/devUser/level3",//请求的url
 			data:{pid:queryCategoryLevel2},//请求参数
 			dataType:"json",//ajax接口（请求url）返回的数据类型
 			success:function(data){//data：返回数据（json对象）
@@ -45,7 +45,7 @@ $("#queryCategoryLevel2").change(function(){
 				for(var i = 0; i < data.length; i++){
 					//alert(data[i].id);
 					//alert(data[i].categoryName);
-					options += "<option value=\""+data[i].id+"\">"+data[i].categoryName+"</option>";
+					options += "<option value=\""+data[i].id+"\">"+data[i].categoryname+"</option>";
 				}
 				$("#queryCategoryLevel3").html(options);
 			},
@@ -63,7 +63,7 @@ $("#queryCategoryLevel2").change(function(){
 
 $(".addVersion").on("click",function(){
 	var obj = $(this);
-	window.location.href="appversionadd?id="+obj.attr("appinfoid");
+	window.location.href="/version/add?id="+obj.attr("appinfoid");
 });
 $(".modifyVersion").on("click",function(){
 	var obj = $(this);
@@ -74,7 +74,7 @@ $(".modifyVersion").on("click",function(){
 		if(versionid == null || versionid == ""){
 			alert("该APP应用无版本信息，请先增加版本信息！");
 		}else{
-			window.location.href="appversionmodify?vid="+ versionid + "&aid="+ appinfoid;
+			window.location.href="/version/modify?vid="+ versionid + "&aid="+ appinfoid;
 		}
 	}else{
 		alert("该APP应用的状态为：【"+obj.attr("statusname")+"】,不能修改其版本信息，只可进行【新增版本】操作！");
@@ -105,8 +105,9 @@ $(document).on("click",".saleSwichOpen,.saleSwichClose",function(){
 
 var saleSwitchAjax = function(appId,obj){
 	$.ajax({
-		type:"PUT",
-		url:appId+"/sale.json",
+		type:"GET",
+		url:"/devUser/updownload",
+		data:{appid:appId}, //请求参数
 		dataType:"json",
 		success:function(data){
 			/*
@@ -175,7 +176,7 @@ var saleSwitchAjax = function(appId,obj){
 
 $(".viewApp").on("click",function(){
 	var obj = $(this);
-	window.location.href="appview/"+ obj.attr("appinfoid");
+	window.location.href="appview?id="+ obj.attr("appinfoid");
 });
 
 $(".deleteApp").on("click",function(){
@@ -183,7 +184,7 @@ $(".deleteApp").on("click",function(){
 	if(confirm("你确定要删除APP应用【"+obj.attr("appsoftwarename")+"】及其所有的版本吗？")){
 		$.ajax({
 			type:"GET",
-			url:"delapp.json",
+			url:"/devUser/delApp",
 			data:{id:obj.attr("appinfoid")},
 			dataType:"json",
 			success:function(data){

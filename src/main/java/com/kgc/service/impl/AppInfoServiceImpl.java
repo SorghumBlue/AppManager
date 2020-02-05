@@ -1,22 +1,25 @@
 package com.kgc.service.impl;
 
-        import com.baomidou.mybatisplus.mapper.EntityWrapper;
-        import com.baomidou.mybatisplus.plugins.Page;
-        import com.kgc.dao.*;
-        import com.kgc.pojo.AppCategory;
-        import com.kgc.pojo.AppInfo;
-        import com.kgc.pojo.AppVersion;
-        import com.kgc.pojo.DataDictionary;
-        import com.kgc.service.AppCategoryService;
-        import com.kgc.service.AppInfoService;
-        import com.kgc.service.AppVersionService;
-        import com.kgc.service.DataDictionaryService;
-        import org.springframework.stereotype.Service;
 
-        import javax.annotation.Resource;
-        import java.math.BigDecimal;
-        import java.util.ArrayList;
-        import java.util.List;
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
+import com.baomidou.mybatisplus.plugins.Page;
+import com.kgc.dao.*;
+import com.kgc.pojo.AppCategory;
+import com.kgc.pojo.AppInfo;
+import com.kgc.pojo.AppVersion;
+import com.kgc.pojo.DataDictionary;
+import com.kgc.service.AppCategoryService;
+import com.kgc.service.AppInfoService;
+import com.kgc.service.AppVersionService;
+import com.kgc.service.DataDictionaryService;
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.Appinfo;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+
 @Service
 public class AppInfoServiceImpl implements AppInfoService {
     @Resource
@@ -36,7 +39,7 @@ public class AppInfoServiceImpl implements AppInfoService {
     private AppVersionService versionService;
 
     @Override
-    public Page<AppInfo> selectAll(Integer pageSize, Integer pageNum,EntityWrapper wrapper) {
+    public Page<AppInfo> selectAll(Integer pageSize, Integer pageNum, EntityWrapper wrapper) {
         Page<AppInfo> page = new Page<AppInfo>(pageNum,pageSize);
         List<AppInfo> appInfos = appInfoMapper.selectPage(page, wrapper);
         DataDictionary flat = new DataDictionary();
@@ -44,7 +47,6 @@ public class AppInfoServiceImpl implements AppInfoService {
         AppCategory appCategory = new AppCategory();
         AppVersion appVersion = new AppVersion();
         for (AppInfo appInfo : appInfos) {
-            System.out.println("==========="+appInfo);
             //查询所属平台
             flat.setTypecode(appInfo.getFlatTypeCode());
             flat.setValueid(appInfo.getFlatformid());
@@ -68,14 +70,12 @@ public class AppInfoServiceImpl implements AppInfoService {
             //查询版本号
             if(appInfo.getVersionid()!=null){
                 appVersion.setId(appInfo.getVersionid());
-            }else {
-                appVersion.setAppid(appInfo.getId());
-            }
-            AppVersion version = appVersionMapper.selectOne(appVersion);
-            if(version!=null){
-                appInfo.setVersionno(version.getVersionno());
-            }else {
-                appInfo.setVersionno(null);
+                AppVersion version = appVersionMapper.selectOne(appVersion);
+                if(version!=null){
+                    appInfo.setVersionno(version.getVersionno());
+                }else {
+                    appInfo.setVersionno(null);
+                }
             }
         }
         page.setRecords(appInfos);
@@ -103,15 +103,13 @@ public class AppInfoServiceImpl implements AppInfoService {
         return appInfo;
     }
 
-    @Resource
-    DataMapper dataMapper;
     @Override
     public DataDictionary selectByvalueid(Long valueid) {
         //查找所属平台
         EntityWrapper wrapper = new EntityWrapper();
         wrapper.eq("typecode","APP_FLATFORM");
         wrapper.eq("valueid",valueid);
-        List<DataDictionary> list = dataMapper.selectList(wrapper);
+        List<DataDictionary> list = dataDictionaryMapper.selectList(wrapper);
         DataDictionary data = list.get(0);
         return data;
     }
@@ -121,7 +119,7 @@ public class AppInfoServiceImpl implements AppInfoService {
         EntityWrapper wrapper = new EntityWrapper();
         wrapper.eq("typecode","APP_STATUS");
         wrapper.eq("valueid",status);
-        List<DataDictionary> list = dataMapper.selectList(wrapper);
+        List<DataDictionary> list = dataDictionaryMapper.selectList(wrapper);
         DataDictionary dataDictionary = list.get(0);
         return dataDictionary;
     }
@@ -228,7 +226,7 @@ public class AppInfoServiceImpl implements AppInfoService {
     }
 
     @Override
-    public Integer insertApp(String softwareName, String APKName, String supportROM, String interfaceLanguage, BigDecimal softwareSize, Long downloads, Long flatformId, Long categoryLevel1, Long categoryLevel2, Long categoryLevel3, String status, String appInfo, String a_logoPicPath) {
+    public Integer insertApp(String softwareName, String APKName, String supportROM, String interfaceLanguage, BigDecimal softwareSize, Long downloads, Long flatformId, Long categoryLevel1, Long categoryLevel2, Long categoryLevel3, String status, String appInfo) {
         AppInfo info = new AppInfo();
         info.setSoftwarename(softwareName);
         info.setApkname(APKName);
@@ -242,7 +240,6 @@ public class AppInfoServiceImpl implements AppInfoService {
         info.setCategorylevel3(categoryLevel3);
         info.setStatus(1L);
         info.setAppinfo(appInfo);
-        info.setLogopicpath(a_logoPicPath);
         return appInfoMapper.insert(info);
     }
 
@@ -252,7 +249,7 @@ public class AppInfoServiceImpl implements AppInfoService {
     }
 
     @Override
-    public AppInfo AppView(Long appid) {
+    public AppInfo AppView(Integer appid) {
         AppInfo info = appInfoMapper.selectById(appid);
         List<DataDictionary> list = dataDicService.findAllFlat();
         List<AppCategory> level1 = categoryService.findAllLevel1();
@@ -293,13 +290,14 @@ public class AppInfoServiceImpl implements AppInfoService {
     }
 
     @Override
-    public Integer delApp(Long appid) {
+    public Integer delApp(Integer appid) {
+        Long id = new Long(appid);
         Integer in = versionService.delByAppId(appid);
-        return appInfoMapper.deleteById(appid);
+        return appInfoMapper.deleteById(id);
     }
 
     @Override
-    public Integer modifyApp(Long appid) {
+    public Integer modifyApp(Integer appid) {
         AppInfo appInfo = appInfoMapper.selectById(appid);
 //        EntityWrapper<AppInfo> wrapper = new EntityWrapper<>();
         if(appInfo.getStatus() == 2 || appInfo.getStatus() == 5){     // 审核通过或是已下架的状态，可以上架
@@ -312,6 +310,25 @@ public class AppInfoServiceImpl implements AppInfoService {
 
         return appInfoMapper.updateAllColumnById(appInfo);
     }
+    public List<DataDictionary> selectByTypeCode(String typeCode){
+        List<DataDictionary> typeCodes = dataDictionaryMapper.selectList(new EntityWrapper<DataDictionary>().eq("typeCode", typeCode));
+        return typeCodes;
+    }
+    @Override
+    public List<AppCategory> selectByPid(List<Integer> pids) {
+        List<AppCategory> appCategories;
+        if (pids.get(0)==0){
+            appCategories = appCategoryMapper.selectList(new EntityWrapper<AppCategory>().isNull("parentId"));
+        }else {
+            appCategories = appCategoryMapper.selectList(new EntityWrapper<AppCategory>().in("parentId", pids));
+        }
+        return appCategories;
+    }
 
+    @Override
+    public Integer modifyAppinfo(AppInfo appinfo) {
+        Integer integer = appInfoMapper.updateById(appinfo);
+        return integer;
+    }
 
 }

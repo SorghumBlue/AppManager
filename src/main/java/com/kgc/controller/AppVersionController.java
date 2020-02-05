@@ -21,15 +21,15 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/version")
-public class AppVersionController {
+public class  AppVersionController {
     @Resource
     AppVersionService versionService;
     @Resource
     AppInfoService appInfoService;
 
     @RequestMapping("/add")
-    public String add(HttpSession session) {
-        List<AppVersion> appVersions = versionService.selectAll();
+    public String add(HttpSession session,@RequestParam Integer id) {
+        List<AppVersion> appVersions = versionService.findByAppId(id);
         session.setAttribute("appVersionList", appVersions);
         return "/developer/appversionadd";
     }
@@ -41,15 +41,11 @@ public class AppVersionController {
     }
 
     @RequestMapping("/modify")
-    public String modify(HttpSession session, Integer id) {
-        if (id == null) {
-            id = 42;
-        }
-        List<AppVersion> appVersions = versionService.selectAll();
+    public String modify(HttpSession session, @RequestParam Integer vid, @RequestParam Integer aid) {
+        List<AppVersion> appVersions = versionService.findByAppId(aid);
         session.setAttribute("appVersionList", appVersions);
-        AppVersion appVersion = versionService.selectById(id);
+        AppVersion appVersion = versionService.selectById(vid);
         session.setAttribute("appVersion", appVersion);
-        System.out.println(appVersion);
         return "/developer/appversionmodify";
     }
 

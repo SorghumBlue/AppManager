@@ -43,12 +43,13 @@ public interface AppInfoService {
                       Long categoryLevel2,
                       Long categoryLevel3,
                       String status,
-                      String appInfo,
-                      String a_logoPicPath);
+                      String appInfo);
 
     List<AppInfo> findAll();
-    AppInfo AppView(Long appid);
-    Integer delApp(Long appid);
-
-    Integer modifyApp(Long appid);
+    AppInfo AppView(Integer appid);
+    Integer delApp(Integer appid);
+    List<DataDictionary> selectByTypeCode(String typeCode);
+    Integer modifyApp(Integer appid);
+    List<AppCategory> selectByPid(List<Integer> pids);
+    Integer modifyAppinfo(AppInfo appInfo);
 }

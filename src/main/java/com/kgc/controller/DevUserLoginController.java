@@ -18,6 +18,7 @@ import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.util.Arrays;
 import java.util.List;
 
 @Controller
@@ -114,20 +115,26 @@ public class DevUserLoginController {
 
 
     @RequestMapping("/appAdd")
-    public String appAdd(){
-
+    public String appAdd(HttpSession session){
+        List<DataDictionary> allFlat = dataService.findAllFlat();
+        List<AppCategory> level1 = appInfoService.selectByPid(Arrays.asList(0));
+        List<AppCategory> level2 = appInfoService.selectByPid(Arrays.asList(1,2));
+        List<AppCategory> level3 = appInfoService.selectByPid(Arrays.asList(3,4,19,20,21,22));
+        session.setAttribute("flatFormList",allFlat);
+        session.setAttribute("categoryLevel1List",level1);
+        session.setAttribute("categoryLevel2List",level2);
+        session.setAttribute("categoryLevel3List",level3);
         return "developer/appinfoadd";
     }
-    @RequestMapping("/doappAdd")
+    /*@RequestMapping("/doappAdd")
     @ResponseBody
     public Object doAdd(@RequestParam String tcode){
-
         return dataService.findSomeAll(tcode);
-    }
+    }*/
 
     @RequestMapping(value = "/appinfoaddsave",method = RequestMethod.POST)
-    public String addSave(MultipartFile file, HttpServletRequest request, HttpSession session,
-                          @RequestParam String  softwareName,
+    public String addSave(HttpServletRequest request, HttpSession session,
+                          @RequestParam String softwareName,
                           @RequestParam String APKName,
                           @RequestParam String supportROM,
                           @RequestParam String interfaceLanguage,
@@ -142,7 +149,7 @@ public class DevUserLoginController {
 //                          @RequestParam String a_logoPicPath
     ){
 
-        if(!file.isEmpty()){
+        /*if(!file.isEmpty()){
             // 服务器的目录
             String path = request.getSession().getServletContext().getRealPath("statics"+ File.separator+"fileUpload");
             System.out.println(path);
@@ -171,10 +178,10 @@ public class DevUserLoginController {
 
             }else{
                 session.setAttribute("fileUploadError","文件格式错误");
-            }
+            }*/
             appInfoService.insertApp(softwareName,APKName,supportROM,interfaceLanguage,softwareSize,downloads,flatformId,
-                    categoryLevel1,categoryLevel2,categoryLevel3,status,appInfo,fileName);
-        }
+                    categoryLevel1,categoryLevel2,categoryLevel3,status,appInfo);
+        /*}*/
         return "redirect:/devUser/appinfolist";
     }
 
@@ -183,7 +190,6 @@ public class DevUserLoginController {
     public AppInfo apkName(@RequestParam String APKName){
         AppInfo in = new AppInfo();
         List<AppInfo> list = appInfoService.findAll();
-        System.out.println(list);
         if(APKName == null || "".equals(APKName)){
             in.setApkname("empty");
             return in;
@@ -200,9 +206,9 @@ public class DevUserLoginController {
         return in;
     }
     @RequestMapping("/appview")        // 查看APP
-    public String appview(HttpSession session,@RequestParam Long id){
+    public String appview(@RequestParam Integer id,HttpSession session){
         AppInfo list = appInfoService.AppView(id);
-        List<AppVersion> versions = versionService.findByAppId(list.getId());
+        List<AppVersion> versions = versionService.findByAppId(list.getId().intValue());
         session.setAttribute("appVersionList",versions);
         session.setAttribute("appInfo",list);
         return "developer/appinfoview";
@@ -210,9 +216,9 @@ public class DevUserLoginController {
 
     @RequestMapping("/delApp")      // 删除APP
     @ResponseBody
-    public ReturnInfo delAPP(@RequestParam Long id){
+    public ReturnInfo delAPP(@RequestParam Integer id){
         ReturnInfo in = new ReturnInfo();
-        Integer delApp = appInfoService.delApp(id);    // 删除app
+        Integer delApp = appInfoService.delApp(id.intValue());    // 删除app
         if(delApp >= 1){
             in.setDelResult("true");
         }else if(delApp == 0){
@@ -224,11 +230,42 @@ public class DevUserLoginController {
     }
 
     @RequestMapping("/appinfomodify")
-    public String appinfomodify(@RequestParam Integer id){
-
+    public String appinfomodify(HttpSession session,@RequestParam(required = false,defaultValue = "56") Integer id){
+        AppInfo appInfo = appInfoService.selectName(id);
+        session.setAttribute("appInfo",appInfo);
         return "developer/appinfomodify";
     }
-
+    @RequestMapping("/appinfomodifysave")
+    public String appinfomodifysave(@RequestParam Integer id,
+                                    @RequestParam String softwareName,
+                                    @RequestParam String APKName,
+                                    @RequestParam String supportROM,
+                                    @RequestParam String interfaceLanguage,
+                                    @RequestParam BigDecimal softwareSize,
+                                    @RequestParam Long downloads,
+                                    @RequestParam Long flatformId,
+                                    @RequestParam Long categoryLevel1,
+                                    @RequestParam Long categoryLevel2,
+                                    @RequestParam Long categoryLevel3,
+                                    @RequestParam String statusName,
+                                    @RequestParam String appInfo){
+       /* AppInfo appinfo = new AppInfo();
+        appinfo.setId(new Long(id));
+        appinfo.setSoftwarename(softwareName);
+        appinfo.setApkname(APKName);
+        appinfo.setSupportrom(supportROM);
+        appinfo.setInterfacelanguage(interfaceLanguage);
+        appinfo.setSoftwaresize(softwareSize);
+        appinfo.setDownloads(downloads);
+        appinfo.setFlatformid(flatformId);
+        appinfo.setCategorylevel1(categoryLevel1);
+        appinfo.setCategorylevel2(categoryLevel2);
+        appinfo.setCategorylevel3(categoryLevel3);
+        appinfo.setStatus(1L);
+        appinfo.setAppinfo(appInfo);
+        appInfoService.modifyAppinfo(appinfo);*/
+        return "developer/appinfolist";
+    }
     @RequestMapping("/updownload")     // 上架下架
     @ResponseBody
     public Object upDownLoad(@RequestParam Long appid){
@@ -239,7 +276,7 @@ public class DevUserLoginController {
         }else if (appid == 0){
             info.setErrorCode("param000001");
         }else {
-            Integer app = appInfoService.modifyApp(appid);
+            Integer app = appInfoService.modifyApp(appid.intValue());
             if(app == 1){
                 info.setErrorCode("0");
                 info.setResultMsg("success");
@@ -260,5 +297,27 @@ public class DevUserLoginController {
     @RequestMapping("/main")
     public String main(){
         return "developer/main";
+    }
+    @RequestMapping("/categorylevellist.json")
+    @ResponseBody
+    public Object getCategorylevel(@RequestParam(required = false) Integer pid){
+        List<Integer> list = null;
+        if(pid==null){
+            list = Arrays.asList(0);
+        }else if(pid==1||pid==2){
+            list = Arrays.asList(pid);
+        }else if(pid>=3&&pid<=18){
+            list = Arrays.asList(3,4);
+        }else if(pid>=19&&pid<=28){
+            list = Arrays.asList(19,20,21,22);
+        }
+        List<AppCategory> appCategories = appInfoService.selectByPid(list);
+        return appCategories;
+    }
+    @RequestMapping("/datadictionarylist")
+    @ResponseBody
+    public Object getDatadictionarylist(@RequestParam String tcode){
+        List<DataDictionary> dataDictionaries = appInfoService.selectByTypeCode(tcode);
+        return dataDictionaries ;
     }
 }

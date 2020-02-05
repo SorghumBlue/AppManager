@@ -167,7 +167,7 @@
 										<td>${appInfo.downloads }</td>
 										<td>${appInfo.versionno }</td>
 										<td>
-										<button type="button" class="btn btn-default checkApp" 
+										<button type="button" class="checkApp"
 											appinfoid="${appInfo.id }" versionid="${appInfo.versionid }" status="${appInfo.status }"
 											statusname="${appInfo.statusname }"
 											data-toggle="tooltip" data-placement="top" title="" data-original-title="查看并审核APP">审核</button>

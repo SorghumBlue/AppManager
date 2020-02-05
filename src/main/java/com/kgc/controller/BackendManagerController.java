@@ -41,7 +41,6 @@ public class BackendManagerController {
         }
         EntityWrapper wrapper = new EntityWrapper();
         if(querySoftwareName!=null){
-            System.err.println(querySoftwareName);
             wrapper.like("softwareName",querySoftwareName);
         }
         if(queryFlatformId!=null){
