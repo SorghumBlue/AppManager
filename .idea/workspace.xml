@@ -7,117 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f30487d2-4387-460e-88d1-4ada559d2a55" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_2_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_2_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_generate_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_generate_2_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_support_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_support_2_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_7_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_7_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_taglibs_taglibs_standard_impl_1_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_taglibs_taglibs_standard_impl_1_2_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_taglibs_taglibs_standard_spec_1_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_taglibs_taglibs_standard_spec_1_2_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_6_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_6_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_10.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_4_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_2_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_2_4_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_4_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_4_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_4_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_4_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_4_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_2_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_2_4_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_2_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_2_4_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_4_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kgc/controller/AppInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kgc/controller/AppInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kgc/controller/AppVersionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kgc/controller/AppVersionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kgc/controller/BackendManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kgc/controller/BackendManagerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kgc/controller/DevUserLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kgc/controller/DevUserLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kgc/dao/DataMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kgc/service/AppInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kgc/service/AppInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kgc/service/AppVersionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kgc/service/AppVersionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kgc/service/impl/AppInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kgc/service/impl/AppInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kgc/service/impl/AppVersionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kgc/service/impl/AppVersionImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/springMvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springMvc-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/backend/applist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/backend/applist.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/developer/appinfoadd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/developer/appinfoadd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/developer/appinfolist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/developer/appinfolist.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/developer/appinfomodify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/developer/appinfomodify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/developer/appinfoview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/developer/appinfoview.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/developer/appversionadd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/developer/appversionadd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/developer/appversionmodify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/developer/appversionmodify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/developer/common/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/developer/common/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/developer/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/developer/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/localjs/appinfoadd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/localjs/appinfoadd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/localjs/appinfolist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/localjs/appinfolist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/localjs/appinfomodify.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/localjs/appinfomodify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/localjs/appinfoview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/localjs/appinfoview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/localjs/applist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/localjs/applist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/localjs/appversionadd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/localjs/appversionadd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/localjs/appversionmodify.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/localjs/appversionmodify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/controller/AppInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/controller/AppInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/controller/AppVersionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/controller/AppVersionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/controller/BackendManagerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/controller/BackendManagerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/controller/DevUserLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/controller/DevUserLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/dao/DataMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/service/AppInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/service/AppInfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/service/AppVersionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/service/AppVersionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/service/impl/AppInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/service/impl/AppInfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/service/impl/AppVersionImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/com/kgc/service/impl/AppVersionImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/springMvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/classes/springMvc-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/backend/applist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/backend/applist.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/developer/appinfoadd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/developer/appinfoadd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/developer/appinfolist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/developer/appinfolist.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/developer/appinfomodify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/developer/appinfomodify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/developer/appinfoview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/developer/appinfoview.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/developer/appversionadd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/developer/appversionadd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/developer/appversionmodify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/developer/appversionmodify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/developer/common/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/developer/common/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/developer/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/jsp/developer/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/WEB-INF/lib/jackson-annotations-2.10.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/WEB-INF/lib/jackson-annotations-2.10.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/statics/localjs/appinfoadd.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/statics/localjs/appinfoadd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/statics/localjs/appinfolist.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/statics/localjs/appinfolist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/statics/localjs/appinfomodify.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/statics/localjs/appinfomodify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/statics/localjs/appinfoview.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/statics/localjs/appinfoview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/statics/localjs/applist.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/statics/localjs/applist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/statics/localjs/appversionadd.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/statics/localjs/appversionadd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManage/statics/localjs/appversionmodify.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManage/statics/localjs/appversionmodify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kgc/controller/AppInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kgc/controller/AppInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kgc/controller/AppVersionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kgc/controller/AppVersionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kgc/controller/BackendManagerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kgc/controller/BackendManagerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kgc/controller/DevUserLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kgc/controller/DevUserLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kgc/dao/DataMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kgc/service/AppInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kgc/service/AppInfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kgc/service/AppVersionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kgc/service/AppVersionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kgc/service/impl/AppInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kgc/service/impl/AppInfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kgc/service/impl/AppVersionImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kgc/service/impl/AppVersionImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springMvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springMvc-servlet.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +95,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/statics/localjs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -376,7 +267,7 @@
       <workItem from="1579844570206" duration="5921000" />
       <workItem from="1580360195494" duration="683000" />
       <workItem from="1580612883197" duration="35295000" />
-      <workItem from="1580870266234" duration="2006000" />
+      <workItem from="1580870266234" duration="2513000" />
     </task>
     <task id="LOCAL-00001" summary="backendlogin完成">
       <created>1578021238535</created>
@@ -399,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578619645109</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="one">
+      <created>1580881175754</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1580881175754</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,14 +306,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="backendlogin完成" />
     <MESSAGE value="two" />
-    <option name="LAST_COMMIT_MESSAGE" value="two" />
+    <MESSAGE value="one" />
+    <option name="LAST_COMMIT_MESSAGE" value="one" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="2" key="#Notifications" timestamp="1578021357804">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="350" y="3" key="#Notifications" timestamp="1580881452533">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="233" y="2" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1578021357804" />
+    <state x="350" y="3" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1580881452533" />
     <state x="643" y="149" key="#Tomcat_9.0.27" timestamp="1579845066546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -448,16 +348,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579847270927" />
-    <state x="183" y="0" key="CommitChangelistDialog2" timestamp="1578619643553">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="279" y="55" key="CommitChangelistDialog2" timestamp="1580881172068">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="183" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1578619643553" />
-    <state x="209" y="142" key="FileChooserDialogImpl" timestamp="1580629244972">
+    <state x="279" y="55" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580881172068" />
+    <state x="535" y="180" key="FileChooserDialogImpl" timestamp="1580881621702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="139" y="93" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1578186216463" />
     <state x="139" y="94" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1579744736384" />
-    <state x="209" y="142" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580629244972" />
+    <state x="535" y="180" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580881621702" />
     <state width="1505" height="87" key="GridCell.Tab.0.bottom" timestamp="1580880611784">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -564,18 +465,20 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="536" height="456" key="SwitcherDM/0.0.1280.680@0.0.1280.680" timestamp="1578280406280" />
-    <state x="233" y="77" key="Vcs.Push.Dialog.v2" timestamp="1578022774568">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="350" y="118" key="Vcs.Push.Dialog.v2" timestamp="1580881415302">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="233" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1578022774568" />
+    <state x="350" y="118" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580881415302" />
     <state x="652" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1580613568184">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="652" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580613568184" />
-    <state x="332" y="143" key="git4idea.merge.GitPullDialog" timestamp="1578619662518">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="498" y="219" key="git4idea.merge.GitPullDialog" timestamp="1580881323222">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="332" y="143" key="git4idea.merge.GitPullDialog/0.0.1280.680@0.0.1280.680" timestamp="1578619662518" />
+    <state x="498" y="219" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580881323222" />
     <state x="28" y="48" key="new project wizard" timestamp="1578204006561">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
